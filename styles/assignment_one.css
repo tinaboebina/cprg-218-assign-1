@@ -1,0 +1,37 @@
+.card-container {
+    gap: 20px; /* Gap of 20 pixels between all animal cards */
+}
+
+.card {
+    width: 100%; /* Cards will fill the width of their container */
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .card-container {
+        display: flex; /* Cards will be laid out in a flex container and wrap below each other */
+        flex-wrap: wrap;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns, each occupying an equal fraction of available space */
+    }
+    .card:last-child {
+        grid-column: span 2; /* The last card will span two columns (2fr) */
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns, each occupying an equal fraction of available space */
+    }
+    .card:last-child {
+        grid-column: span 1; /* The last card will revert back to spanning one column (1fr) */
+    }
+}
