@@ -1,10 +1,17 @@
 .video-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 40px;
+    padding: 2rem;
+    aspect-ratio: 16 / 9;
+}
+.video {
+    width: 100%;
+    
 }
 
-.video {
-    max-width: 100%;
+@media screen and (min-width: 1200px) {
+    .video {
+        width: 85%;
+        height: 85%;
+}
 }

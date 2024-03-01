@@ -6,6 +6,10 @@
     width: 100%; /* Cards will fill the width of their container */
 }
 
+.card img {
+    object-fit: cover; /* Ensure the aspect ratio is maintained while covering the entire container */
+}
+
 /* Mobile */
 @media screen and (max-width: 768px) {
     .card-container {
