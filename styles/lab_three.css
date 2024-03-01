@@ -1,17 +1,18 @@
+/* Video container adjusted to center of page */
 .video-container {
     display: flex;
     justify-content: center;
     padding: 2rem;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 9; /* Maintain video aspect ratio in different screen sizes */
 }
 .video {
-    width: 100%;
+    width: 100%; /* Video will fill container */
     
 }
 
 @media screen and (min-width: 1200px) {
     .video {
-        width: 85%;
+        width: 85%; /* Adjusted video to be more aligned with photo cards */
         height: 85%;
 }
 }
